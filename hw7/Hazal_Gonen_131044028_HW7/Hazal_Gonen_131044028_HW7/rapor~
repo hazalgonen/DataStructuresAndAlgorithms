@@ -1,0 +1,43 @@
+Rapor:
+
+
+Hazal Gönen 131044028
+HW07_VERİ YAPILARI RAPOR
+
+Bu program 2 farklı part icerir bunlar:
+1. similasyon programi
+2. iki kartı eslestirme programi
+
+
+SİMİLASYON ICIN SISTEM GEREKSINIMLERI :
+Bu class için öncelikle verilerin bulunduğu bir txt olmali ve içinde bilgiler bulunmalı.
+Program başlarken bu txtnin adı parametre olarak gonderilmeli.
+Oncelik siralaması olduğu için priorityqueue imlementasyonu gerekiyor.
+Txtde yer alan bilgileri alarak ilk olarak kuyruktan kim çıkıcak onu hesaplar.
+
+SİMİLASYON Classı için PROBLEM COZUM YONTEMLERI:
+Similasyonda öncelikler olduğu için kendi priorityqueue classımı yazdım bunu daha önceki ödevde yazdığım için onu kullandım.
+Txtdeki bilgileri customer classında tuttum ve customer classını içeren bir arrayliste butun bilgileri ekledim daha sonra öncelik sırasına göre işlem yapıldı. Burda takıldığım yer servis süresini hesaba katamadım hatalar verdi sürekli o yüzden onu yorum satırı olarak bıraktım bu sebeple program yanlış çalışıyor.
+
+
+
+IKI KARTI EŞLEŞTİRME PROGRAMI ICIN SISTEM GEREKSINIMLERI :
+Bu class için öncelikle txt dosyası olmalı.
+Asistan ve Cardlar txtden okunup kaydedilmeli
+Ve daha sonra iki kartın eşit olup olmadığına bakılabilir.
+Hashcode implementasyonunu yazdım
+
+
+IKI KARTI EŞLEŞTİRME PROGRAMI ICIN PROBLEM COZUM YONTEMLERI:
+Bilgileri tutmak için Cards isimli class yazdım ve onu extend eden Academic ve Student Card classları var.
+Classlar sadece barkod numaralarını ve cardidlerini tutuyorlar.
+cardId her kişiye özel bir id ve kartın içinde bilgi olarak bunu tuttum
+eşleştirme yapabilmek için 2 tane hashtable kullandım
+ilki butun kardları ve idlerini tutuyor böylece kartın kime ait olduğunu bulabilirim
+idye göre hashleme yapabilirim.
+ikincisi iki kartın kombin edilmiş halini ve asistanı tutuyor
+burdan iki kartı barkod numaralarına göre hashledim ve bu hashleme 31 asal sayini kullanarak yaptım
+daha sonra 500 input içeren bi txtden okuyarak aynı isimli kişiler gelse bile idleri unique olduğu için hashleme yapabildim
+Testi görebilmek için 4 tane eşitlik denedim ve doğru çalıştığını gördüm
+
+
